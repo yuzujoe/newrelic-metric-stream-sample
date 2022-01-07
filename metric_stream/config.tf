@@ -6,8 +6,6 @@ resource "aws_config_configuration_recorder" "configuration_recorder" {
   role_arn = aws_iam_role.config.arn
 }
 
-
-
 resource "aws_iam_role" "config" {
   name               = "metric-stream-config"
   description        = "Role to allow Config Service communicate with Delivery Channel"

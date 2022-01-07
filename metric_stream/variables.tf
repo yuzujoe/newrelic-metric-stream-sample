@@ -3,7 +3,7 @@ variable "newrelic_licence_key" {
 }
 
 variable "bucket_prefix" {
-  type = string
+  type    = string
   default = ""
 }
 
