@@ -3,8 +3,7 @@ variable "newrelic_licence_key" {
 }
 
 variable "bucket_prefix" {
-  type    = string
-  default = ""
+  type = string
 }
 
 data "aws_caller_identity" "current" {}
