@@ -5,7 +5,8 @@ NewRelic との AWS 連携において IAM Role の作成と Metric Steram で N
 ## Install Tool
 
 - AWS Profile などの設定は事前にされている前提でおこないます。
-
+  - https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html
+  
 1. tfenv 経由で Terraform をインストール
 
 ```shell
@@ -93,20 +94,13 @@ terraform.tfvars を作成し環境変数を設定
  cp terraform.tfvars.sample terraform.tfvars
 ```
 
-NewRelic のライセンスキーを作成した terraform.tfvars の環境変数に設定
+NewRelic のライセンスキー と s3 の bucket を一意なものにするために何かしらの prefix を当てるために環境変数を設定。
 
 ```terraform
- newrelic_licence_key = "NewRelic Licence Key"
+newrelic_licence_key = "NewRelic Licence Key"
+bucket_prefix        = "bucket-prefix"
 ```
 
-S3 bucket を作成する上で一意なものにする必要があるので何かしらの prefix を設定するために `bucket_prefix` の環境変数を編集
-
-```terraform
-variable "bucket_prefix" {
-  type    = string
-  default = "hogehoge"
-}
-```
 
 4. terraform plan で作成されるリソースの確認
 
