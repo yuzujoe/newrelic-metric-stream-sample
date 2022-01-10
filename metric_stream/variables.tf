@@ -1,4 +1,4 @@
-variable "newrelic_licence_key" {
+variable "newrelic_license_key" {
   type = string
 }
 

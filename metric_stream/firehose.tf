@@ -8,7 +8,7 @@ resource "aws_kinesis_firehose_delivery_stream" "newrelic_delivery_stream" {
     request_configuration {
       content_encoding = "GZIP"
     }
-    access_key         = var.newrelic_licence_key
+    access_key         = var.newrelic_license_key
     buffering_interval = 60
     buffering_size     = 1
     retry_duration     = 60
