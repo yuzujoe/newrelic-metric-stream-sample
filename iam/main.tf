@@ -16,7 +16,7 @@ data "aws_iam_policy_document" "newrelic_integrations" {
     }
 
     principals {
-      identifiers = [var.newrelic_aws_account_id]
+      identifiers = [var.another_aws_account_id]
       type        = "AWS"
     }
   }
