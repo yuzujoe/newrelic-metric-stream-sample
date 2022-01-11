@@ -18,9 +18,9 @@ NewRelic との AWS 連携において IAM Role の作成と Metric Steram で N
 通常であれば .terraform-version に設定している値がローカルになければ tfenv が自動でインストールしてくれますがもしインストールされなければ tfenv 経由で今回使用するバージョンのインストールを行ってください。
 
 ```shell
- tfenv install 1.1.2
+ tfenv install 1.1.3
  
- tfenv global 1.1.2
+ tfenv global 1.1.3
 ```
 
 ## IAM Role を作成
