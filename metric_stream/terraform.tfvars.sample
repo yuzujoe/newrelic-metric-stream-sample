@@ -1,2 +1,2 @@
-newrelic_licence_key = "NewRelic License Key"
+newrelic_license_key = "NewRelic License Key"
 bucket_prefix        = ""
