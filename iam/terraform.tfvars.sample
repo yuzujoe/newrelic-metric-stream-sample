@@ -1,2 +1,2 @@
 newrelic_account_id     = "<NewRelic Account ID>"
-newrelic_aws_account_id = "<Another AWS Account ID>"
+another_aws_account_id = "<Another AWS Account ID>"

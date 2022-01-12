@@ -47,7 +47,7 @@ NewRelic との AWS 連携において IAM Role の作成と Metric Steram で N
 
 ```terraform
  newrelic_account_id     = "your newrelic account id"
- newrelic_aws_account_id = "another aws account id"
+ another_aws_account_id = "another aws account id"
 ```
 
 4. terraform plan で作成されるリソースを確認
@@ -68,7 +68,7 @@ Apply complete! がでてきたら成功です。
 aws コンソールで作成された IAM Role の arn をコピーしてください。
 下記の aws cli でも取得可能です。
 ```shell
- aws iam get-role --role-name <role-name> | jq '.Role.Arn'
+ aws iam get-role --role-name NewRelicInfrastructure-Integrations | jq '.Role.Arn'
 ```
 
 取得した arn を NewRelic One の AWS 連携画面の Step5 で入力します。
@@ -97,7 +97,7 @@ terraform.tfvars を作成し環境変数を設定
 NewRelic のライセンスキー と s3 の bucket を一意なものにするために何かしらの prefix を当てるために環境変数を設定。
 
 ```terraform
-newrelic_licence_key = "NewRelic Licence Key"
+newrelic_license_key = "NewRelic License Key"
 bucket_prefix        = "bucket-prefix"
 ```
 
