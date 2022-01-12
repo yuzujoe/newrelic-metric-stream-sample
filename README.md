@@ -20,7 +20,7 @@ NewRelic との AWS 連携において IAM Role の作成と Metric Steram で N
 ```shell
  tfenv install 1.1.3
  
- tfenv global 1.1.3
+ tfenv use 1.1.3
 ```
 
 ## IAM Role を作成
